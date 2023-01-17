@@ -11,23 +11,22 @@ This model uses an active matter framework to describe the forces experienced by
 
 The repository contains the following files:
 
+- ```cyano_main.m``` : main file (start here)
 
-* ```cyano_main.m''' : main file (start here)
+- ```set_parameters.m``` : sets parameters
 
-* ```set_parameters.m''' : sets parameters
+- ```setup_colony.m``` : initializes a cyanobacterial colony, specifying the cell positions and slime content
 
-* ```setup_colony.m''' : initializes a cyanobacterial colony, specifying the cell positions and slime content
+- ```cyano_motion.m``` : simulates the motion of cyanobacterial cells
 
-* ```cyano_motion.m''' : simulates the motion of cyanobacterial cells
+- ```determine_force.m``` : determines the force on each cell at each time point
 
-* ```determine_force.m''' : determines the force on each cell at each time point
+- ```covered_area.m``` : finds the grid indices lying under a circle of specified radius
 
-* ```covered_area.m''' : finds the grid indices lying under a circle of specified radius
-
-* ```pack_balls_circle.m''' : pack balls of a given radius within a circular region
+- ```pack_balls_circle.m``` : pack balls of a given radius within a circular region
 
 
-The following table provides a description of the parameters specified in ```set_parameters.m''', and supplied to the function ```cyano_motion.m''':
+The following table provides a description of the parameters specified in ```set_parameters.m```, and supplied to the function ```cyano_motion.m```:
 
 | Variable | Description |
 | --- | --- |
